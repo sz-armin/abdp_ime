@@ -1,5 +1,4 @@
-## Train
-
+*Model checkpoints will be made available in the near future*
 
 ---
 
