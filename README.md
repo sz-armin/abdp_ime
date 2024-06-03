@@ -10,7 +10,7 @@ This repository contains the implementation of our proposed approach and the mai
 
 The following image outlines an example conversion done by our model:
 
-<img width="1192" alt="Outline of our model." src="https://user-images.githubusercontent.com/77587091/214112249-7d432fb1-b7ca-47ba-bf93-8d59bb8311b6.png">
+![image](https://github.com/sz-armin/abdp_ime/assets/77587091/3450805f-b0d7-48cf-8ae3-9e7ec4758622)
 
 To put it simply, our model achieves an anticipation-free conversion by decoding only on word-boundaries predicted by a linear classifier on top of a deep encoder stack which is trained in a multi-task settings. This is possible because the many-to-one and monotonic nature of kana-kanji alignment means that word-boundaries are all that we need to obtain kana-kanji alignments, which is a necessity for anticipation-free conversions.
 Furthermore, we also use an additional linear classifier trained in a wait-k fashion to obtain more accurate boundary predictions and trigger a correction if there is a mismatch.
